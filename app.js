@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    // Cargar los datos cuando se cargue la página
+    // Cargar los datos
     $.ajax({
         url: 'cargar_datos.php',
         method: 'GET',
@@ -94,9 +94,7 @@ $(document).ready(function() {
     });
 
     function validateRUT(rut) {
-        // Implementa la validación del RUT de Chile aquí
-        // Esta es una función básica de validación de RUT
-        // Puedes mejorarla según tus necesidades
+        // Implementa la validación del RUT de Chile 
         var rutRegex = /^[0-9]+-[0-9kK]{1}$/;
         return rutRegex.test(rut);
     }
